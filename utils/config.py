@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser(description='BRAIN implementation')
 parser.add_argument("--data_name", type=str, default="iapr", # flickr coco nus iapr
                     help="data name")
 parser.add_argument('--root_dir', type=str, default='./')
-parser.add_argument('--log_name', type=str, default='BRAIN')
+parser.add_argument('--log_name', type=str, default='BRAIN') # HIPPO
 parser.add_argument('--pretrain', action='store_true', default=False)
 parser.add_argument('--pretrain_dir', type=str, default='EN')
 parser.add_argument('--arch', '-a', metavar='ARCH', default='vgg11', help='model architecture: ' + ' | '.join(['ResNet', 'VGG']) + ' (default: vgg11)')
