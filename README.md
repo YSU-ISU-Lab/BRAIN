@@ -1,10 +1,13 @@
-# BRAINHash: Brain-inspired Region-Aligned Interaction Network for Unsupervised Cross-Modal Hashing
-
 This repository contains the official implementation for our paper:
 
 **BRAINHash: Brain-inspired Region-Aligned Interaction Network for Unsupervised Cross-Modal Hashing**
 
-> 🚧 **Code will be available soon.**
+## 🧠 Overview
+
+This codebase includes two main components:
+
+- **HIPPO**: The hippocampus-inspired teacher model (🚧 *will be available soon*).
+- **BRAIN**: The final SNN-based framework for unsupervised cross-modal hashing.
 
 ## 📄 Paper
 
@@ -19,16 +22,12 @@ Please refer to the datasets used in [UCCH TPAMI'23](https://github.com/penghu-c
 - MIRFlickr25K
 - IAPR TC-12
 
-<!--You may follow the instructions in UCCH to preprocess and organize the datasets.
+## 🚀 Usage
 
-## 📌 Citation
+- Running BRAIN
 
-If you find our work helpful, please consider citing our paper:
+  To run the BRAIN model, use the following command:
+  
+  ```bash
+  python BRAIN.py --data_name flickr --bit 16 --num_hiden_layers 3 2 4 2 2 1 --max_epochs 300 --train_batch_size 256 --log_name BRAIN --lr 0.0001 --resume vgg11_16_best_flickr_checkpoint.t7 --margin1 0.5 --margin2 0.5 --margin3 0.5 --time_enc1 0.06 --time_enc2 0.09
 
-```bibtex
-@article{your_bibtex_entry,
-  title   = {BRAINHash: Brain-inspired Region-Aligned Interaction Network for Unsupervised Cross-Modal Hashing},
-  author  = {Hao Fu and Guanghua Gu and Yunchao Wei and Yao Zhao},
-  journal = {IEEE Transactions on Image Processing},
-  year    = {2025}
-}-->
