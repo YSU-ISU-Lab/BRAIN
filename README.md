@@ -9,6 +9,8 @@ This codebase includes two main components:
 - **HIPPO**: The hippocampus-inspired teacher model (🚧 *will be available soon*).
 - **BRAIN**: The final SNN-based framework for unsupervised cross-modal hashing.
 
+The full code for BRAINHash will be released soon.
+
 ## 📄 Paper
 
 Coming soon...
